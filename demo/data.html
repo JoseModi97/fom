@@ -6,7 +6,6 @@
             background-color:#000000;
             margin: 0px;
             height: 100%;
-            overflow: hidden;
         }
         #lottie{
             background-color:#000000;
@@ -46,7 +45,10 @@
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        animationData: animationData
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
     };
 
     var anim;
