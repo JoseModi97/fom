@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottie Animation Test</title>
+    <script src="lottie.js"></script>
+    <style>
+        #lottie-container {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black; /* For visualization */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lottie Animation Test</h1>
+    <div id="lottie-container"></div>
+
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), // the dom element that will contain the animation
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'data.json' // the path to the animation json
+        });
+    </script>
+</body>
+</html>
